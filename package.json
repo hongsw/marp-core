@@ -38,6 +38,7 @@
   },
   "scripts": {
     "build": "yarn -s clean && rollup -c",
+    "umd": "rollup -c --file dist/marp.umd.js --format umd --name 'Marp'",
     "check:audit": "yarn audit",
     "check:format": "yarn -s format -c",
     "check:ts": "tsc --noEmit",
